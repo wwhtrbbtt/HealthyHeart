@@ -68,7 +68,7 @@ func getDevices() []string {
 	likely := []string{}
 	for _, e := range entries {
 		n := e.Name()
-		if containsAny(n, []string{"pf", "tty", "disk", "std", "pty", "random", "zero", "profile", "pf", "ptmx", "aes_0", "apfs", "audit", "auto", "Bluetooth", "console", "afsc", "trace", "fbt", "dt", "events", "log", "lock", "null", "monotonic", "perfmon", "nfsclnt", "Flip5"}) || n == "fd" {
+		if containsAny(n, []string{"pf", "tty", "disk", "std", "pty", "random", "zero", "profile", "pf", "ptmx", "aes_0", "apfs", "audit", "auto", "Bluetooth", "console", "afsc", "trace", "fbt", "dt", "events", "log", "lock", "null", "monotonic", "perfmon", "nfsclnt", "Flip5", "nsmb"}) || n == "fd" {
 			continue
 		}
 
